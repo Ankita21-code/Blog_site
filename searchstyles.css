@@ -1,0 +1,135 @@
+body {
+
+  background-color: #ccf2f4;
+
+}
+
+.heading {
+  margin: 0;
+  padding-top: 1%;
+
+}
+.heading span{
+  color: black;
+  display:block;
+}
+.text1{
+  margin:0;
+  padding-left: 2%;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  margin-bottom: 10px;
+  color: black;
+  background: white;
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  position: relative;
+}
+.text2{
+  margin:0;
+  padding-left:2%;
+  font-size: 18px;
+  color: grey;
+}
+.headbutton{
+  padding-right: 3%;
+  padding-bottom: 2%;
+  float: right;
+  padding: 0;
+  font-size: 18px;
+}
+.genrebutton{
+
+padding: 10px 400px 10px;
+
+}
+
+h2{
+  padding-top: 2%;
+   font-size: 35px;
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  padding-left: 7%;
+  padding-bottom: 2%;
+}
+
+.slider{
+ padding-left: 40%;
+ padding-right: 40%
+  width : 380px;
+  height:500px;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.slides{
+  width:600%;
+  height:500px;
+  display: flex;
+}
+
+.slides input{
+  display:none;
+}
+
+.slide{
+  width:20%;
+  transition: 1.5s;
+}
+
+.slide img{
+  width:400px;
+  height:400px;
+}
+
+/* CSS for manual navigation*/
+.navigation-manual{
+  position: absolute;
+  width:300px;
+  margin-top: -40px;
+  display:flex;
+  justify-content: center;
+
+}
+
+.manual-btn{
+  border: 2px solid #78c4d4;
+  padding: 5px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #78c4d4;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+button {
+  border: none;
+  background: none;
+  padding-bottom: 2%;
+  font-size: 20px;
+  font-weight: bolder;
+
+}
