@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+    <link rel="stylesheet" href="loginstyles.css">
+  <style>
+    h2 {
+      text-align: center;
+    }
+  </style>
+
+  <script>
+     function validateForm()
+     {
+      
+      var un=document.forms["login-form"]["uname"].value;
+      var pwd=document.forms["login-form"]["pwd"].value;
+
+          if(un==null||un=="")
+         {
+            alert("Username cannot be blank");
+            return false;
+         }
+          else if(pwd==null||pwd=="")
+         {
+            alert("Password cannot be blank")
+            return false;
+         }
+     }
+  </script>
+</head>
+
+<body>
+  <div class="heading">
+    <span class="text1"> ShortCut</span>
+     <span class="text2"> Unpack. Login. Relax</span>
+
+  </div>
+
+  <div class="headbutton">
+    <a href="Home.html"><button type="button" style="margin:10px;"> <b>Home</b> </button></a> <a href="Search.html"><button type="button" style="margin:10px;"> <b>Search</b> </button></a>  <a href="Login.html"> <button type="button" style="margin:10px;" ><b>Login</b> </button> </a>
+
+  </div>
+
+  <h2> Login</h2>
+
+  <div class="submission-form">
+   <div class="form">
+  <form name="login-form" onsubmit="validateForm()">
+    <input type="text" name="uname" placeholder="Username" ><br>
+    <input type="password" name="pwd" placeholder="Password"><br>
+   <button type="submit">Login</button>
+   <p class="message">Not Registered? <a href="Registration.html"> Register </a> </p>
+  </form>
+  </div>
+</div>
+
+</body>
+
+
+</html>
